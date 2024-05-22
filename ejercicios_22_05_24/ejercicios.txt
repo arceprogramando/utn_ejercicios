@@ -1,0 +1,23 @@
+Alumnos:
+Felipe Aleman Arce
+Nahuel Castro
+Vicki Diaz Francesca
+Lombardo
+
+
+Ejercicios clase 22-5
+1- Media de cuatro números.
+Escribir un programa que pida por teclado cuatro números y calcule y presente la media
+de los cuatro.
+2-Verificar si un número es positivo.
+
+3-Comprobar si una letra es una vocal (mayúscula).
+4-Verificar si una persona es mayor de edad.
+5-Verificar si un número es mayor que 100.
+6-Comprobar si un número es positivo o negativo.
+7-Determinar si una persona es mayor o menor de edad.
+8-Verificar el rango de un número.  hasta el numero 30
+
+9-Determinar el día de la semana basado en un número.1-7
+10-Determinar la estación del año basada en un mes.
+11- Imprimir los números del 1 al 20.
