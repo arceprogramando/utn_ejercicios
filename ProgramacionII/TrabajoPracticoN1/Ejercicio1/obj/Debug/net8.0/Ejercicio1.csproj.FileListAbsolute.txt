@@ -1,0 +1,15 @@
+/home/felipe/Desktop/utn_ejercicios/ProgramacionII/TrabajoPracticoN1/Ejercicio1/bin/Debug/net8.0/Ejercicio1
+/home/felipe/Desktop/utn_ejercicios/ProgramacionII/TrabajoPracticoN1/Ejercicio1/bin/Debug/net8.0/Ejercicio1.deps.json
+/home/felipe/Desktop/utn_ejercicios/ProgramacionII/TrabajoPracticoN1/Ejercicio1/bin/Debug/net8.0/Ejercicio1.runtimeconfig.json
+/home/felipe/Desktop/utn_ejercicios/ProgramacionII/TrabajoPracticoN1/Ejercicio1/bin/Debug/net8.0/Ejercicio1.dll
+/home/felipe/Desktop/utn_ejercicios/ProgramacionII/TrabajoPracticoN1/Ejercicio1/bin/Debug/net8.0/Ejercicio1.pdb
+/home/felipe/Desktop/utn_ejercicios/ProgramacionII/TrabajoPracticoN1/Ejercicio1/obj/Debug/net8.0/Ejercicio1.GeneratedMSBuildEditorConfig.editorconfig
+/home/felipe/Desktop/utn_ejercicios/ProgramacionII/TrabajoPracticoN1/Ejercicio1/obj/Debug/net8.0/Ejercicio1.AssemblyInfoInputs.cache
+/home/felipe/Desktop/utn_ejercicios/ProgramacionII/TrabajoPracticoN1/Ejercicio1/obj/Debug/net8.0/Ejercicio1.AssemblyInfo.cs
+/home/felipe/Desktop/utn_ejercicios/ProgramacionII/TrabajoPracticoN1/Ejercicio1/obj/Debug/net8.0/Ejercicio1.csproj.CoreCompileInputs.cache
+/home/felipe/Desktop/utn_ejercicios/ProgramacionII/TrabajoPracticoN1/Ejercicio1/obj/Debug/net8.0/Ejercicio1.sourcelink.json
+/home/felipe/Desktop/utn_ejercicios/ProgramacionII/TrabajoPracticoN1/Ejercicio1/obj/Debug/net8.0/Ejercicio1.dll
+/home/felipe/Desktop/utn_ejercicios/ProgramacionII/TrabajoPracticoN1/Ejercicio1/obj/Debug/net8.0/refint/Ejercicio1.dll
+/home/felipe/Desktop/utn_ejercicios/ProgramacionII/TrabajoPracticoN1/Ejercicio1/obj/Debug/net8.0/Ejercicio1.pdb
+/home/felipe/Desktop/utn_ejercicios/ProgramacionII/TrabajoPracticoN1/Ejercicio1/obj/Debug/net8.0/Ejercicio1.genruntimeconfig.cache
+/home/felipe/Desktop/utn_ejercicios/ProgramacionII/TrabajoPracticoN1/Ejercicio1/obj/Debug/net8.0/ref/Ejercicio1.dll
