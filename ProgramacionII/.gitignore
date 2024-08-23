@@ -1,0 +1,78 @@
+# Carpetas de construcción (Build) de Visual Studio
+bin/
+obj/
+
+# Configuración de usuario de Visual Studio
+.vs/
+
+# Archivos generados por el entorno
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Configuración del entorno local
+*.local
+*.cache
+*.ide
+
+# Configuración de depuración y análisis de código
+*.DotSettings.user
+
+# Archivos de paquetes de NuGet
+packages/
+*.nupkg
+*.snupkg
+project.lock.json
+project.fragment.lock.json
+
+# Respaldo de paquetes globales de NuGet
+**/packages/*.*/**
+
+# Configuración de resharper y análisis de código
+_ReSharper*/
+*.DotSettings.user
+
+# Archivos de resultados de depuración y cobertura
+TestResults/
+*.trx
+*.coverage
+*.coveragexml
+*.log
+**/*.csproj.user
+*.sln.dotsettings
+
+# Archivos de configuración y control de versiones
+*.csproj.nuget.g.props
+*.csproj.nuget.g.targets
+
+# Archivos del sistema operativo
+[Tt]humbs.db
+*.DS_Store
+
+# Configuración de servidor y despliegue
+.vscode/
+.vscode-test/
+
+# Archivos de caché y temporales
+*.log
+*.tlog
+*.temp
+*.tmp
+*.bak
+
+# Archivos de base de datos
+*.mdf
+*.ldf
+
+# Configuración de Docker y contenedores
+.docker/
+**/[Dd]ockerfile
+docker-compose*
+docker-compose.*.yml
+
+# Archivos para la publicación de ClickOnce
+publish/
+
+# Archivos de configuración de IDE
+.idea/
