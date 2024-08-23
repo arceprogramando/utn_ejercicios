@@ -1,23 +1,17 @@
 ﻿/*
-Ejercicio 6
-Escribe un programa que calcule la suma de todos los números múltiplos de 5
-comprendidos entre dos enteros positivos leídos por teclado
+Ejercicio 5
+Escribe un programa que escriba la tabla de multiplicar de cualquier número entero dado
+por el usuario, entre 1 y 10.
 */
 class Program
 {
     static void Main()
     {
-        int numero1 = LeeNumero("Introduce el primer número entero positivo: ");
-        int numero2 = LeeNumero("Introduce el segundo número entero positivo: ");
+        int num = LeeNumero("Introduce el primer número entero positivo: ");
 
-        if (numero1 > numero2)
-        {
-            (numero1, numero2) = (numero2, numero1);
-        }
+        int sumaMultiploDeCinco = NumeroMultiplicado(num);
 
-        int sumaMultiploDeCinco = SumarMultiploDeCinco(numero1, numero2);
-
-        Console.WriteLine($"La suma de todos los múltiplos de 5 entre {numero1} y {numero2} es: {sumaMultiploDeCinco}");
+        Console.WriteLine($"{sumaMultiploDeCinco}");
     }
 
     static int LeeNumero(string mensaje)
@@ -36,16 +30,14 @@ class Program
         }
     }
 
-    static int SumarMultiploDeCinco(int numero1, int numero2)
+    static int NumeroMultiplicado(int num)
     {
         int suma = 0;
 
-        for (int i = numero1; i <= numero2; i++)
+        for (int i = 0; i <= 10; i++)
         {
-            if (i % 5 == 0)
-            {
-                suma += i;
-            }
+            suma = num * i;
+            Console.WriteLine(suma);
         }
 
         return suma;
