@@ -11,20 +11,16 @@ class Program
         
         int[] numeros = new int[cantidadNumeros];
 
-        // Solicitar al usuario los N números
         for (int i = 0; i < cantidadNumeros; i++)
         {
             numeros[i] = PedirNumero($"Ingrese el número {i + 1}: ");
         }
 
-        // Encontrar el mayor y el menor de los números ingresados
         int mayor = EncontrarMayor(numeros);
         int menor = EncontrarMenor(numeros);
 
-        // Calcular la suma de los números comprendidos entre el menor y el mayor
         int suma = SumarNumerosEntre(menor, mayor);
 
-        // Mostrar el resultado
         Console.WriteLine($"La suma de los números comprendidos entre {menor} y {mayor} es: {suma}");
     }
 
