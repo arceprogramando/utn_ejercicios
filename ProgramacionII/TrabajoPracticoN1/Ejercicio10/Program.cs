@@ -10,8 +10,8 @@
         {
             Console.WriteLine($"\nEmpleado #{i + 1}");
             string nombre = LeerString("Ingrese el nombre del empleado: ");
-            int horasTrabajadas = LeerNumero("Ingrese las horas trabajadas: ");
-            decimal tarifaPorHora = LeerHorasTrabajadas("Ingrese la tarifa por hora: ");
+            int horasTrabajadas = LeerHorasTrabajadas("Ingrese las horas trabajadas: ");
+            decimal tarifaPorHora = LeerTarifaPorHora("Ingrese la tarifa por hora: ");
 
             empleados[i] = new Empleado(nombre, horasTrabajadas, tarifaPorHora);
         }
@@ -41,7 +41,7 @@
         }
     }
 
-    static int LeerNumero(string mensaje)
+    static int LeerHorasTrabajadas(string mensaje)
     {
         while (true)
         {
@@ -57,7 +57,7 @@
         }
     }
 
-    static decimal LeerHorasTrabajadas(string mensaje)
+    static decimal LeerTarifaPorHora(string mensaje)
     {
         while (true)
         {
