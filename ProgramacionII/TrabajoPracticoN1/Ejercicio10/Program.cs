@@ -4,7 +4,6 @@
     {
         int cantidadDeEmpleados = CantidadDeEmpleados("Ingrese la cantidad de empleados:");
 
-        // Crear un arreglo de empleados basado en la cantidad especificada
         Empleado[] empleados = new Empleado[cantidadDeEmpleados];
 
         for (int i = 0; i < cantidadDeEmpleados; i++)
@@ -14,11 +13,9 @@
             int horasTrabajadas = LeerNumero("Ingrese las horas trabajadas: ");
             decimal tarifaPorHora = LeerHorasTrabajadas("Ingrese la tarifa por hora: ");
 
-            // Crear y almacenar la instancia del empleado
             empleados[i] = new Empleado(nombre, horasTrabajadas, tarifaPorHora);
         }
 
-        // Mostrar el sueldo bruto de cada empleado
         Console.WriteLine("\nSueldo bruto de cada empleado:");
         for (int i = 0; i < empleados.Length; i++)
         {
