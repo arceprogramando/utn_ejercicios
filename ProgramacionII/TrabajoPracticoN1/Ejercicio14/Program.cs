@@ -5,13 +5,6 @@ resultado de dividir entre el primero y el segundo. Por el contrario, si el segu
 escribirá “Error: No se puede dividir entre cero”.
 */
 
-/*
-Ejercicio 13
-Crear un programa que pida al usuario dos números enteros y diga "Uno de los números es
-positivo", "Los dos números son positivos" o bien "Ninguno de los números es positivo", según
-corresponda.
-*/
-
 class Program
 {
     static void Main()
