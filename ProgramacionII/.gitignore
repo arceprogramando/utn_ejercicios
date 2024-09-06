@@ -10,6 +10,7 @@ obj/
 *.suo
 *.userosscache
 *.sln.docstates
+*.csproj.user
 
 # Configuración del entorno local
 *.local
@@ -29,7 +30,7 @@ project.fragment.lock.json
 # Respaldo de paquetes globales de NuGet
 **/packages/*.*/**
 
-# Configuración de resharper y análisis de código
+# Configuración de Resharper y análisis de código
 _ReSharper*/
 
 # Archivos de resultados de depuración y cobertura
@@ -38,12 +39,12 @@ TestResults/
 *.coverage
 *.coveragexml
 *.log
-**/*.csproj.user
 *.sln.dotsettings
 
 # Archivos de configuración y control de versiones
 *.csproj.nuget.g.props
 *.csproj.nuget.g.targets
+*.csproj.nuget.*
 
 # Archivos del sistema operativo
 [Tt]humbs.db
@@ -79,3 +80,18 @@ publish/
 *.sublime-project
 *.swp
 *.swo
+
+# Archivos generados por herramientas de construcción
+*.pdb
+*.exe
+*.dll
+*.obj
+
+# Archivos de caché específicos
+*.AssemblyInfoInputs.cache
+*.GeneratedMSBuildEditorConfig.editorconfig
+*.assets.cache
+*.csproj.CoreCompileInputs.cache
+*.csproj.FileListAbsolute.txt
+*.genruntimeconfig.cache
+*.sourcelink.json

@@ -1,8 +1,8 @@
 ﻿/*
 Ejercicio 2
-Escribe un programa que tome un anio introducido por el usuario y diga si es bisiesto o no. Recuerda
-que los anios múltiplos de 4 son bisiestos, excepto aquellos que son múltiplos de 100 y no lo
-son de 400. Es decir, el anio 2000 si es bisiesto, pero no lo son el 1990 ni el 2100.
+Escribe un programa que tome un año introducido por el usuario y diga si es bisiesto o no. Recuerda
+que los años múltiplos de 4 son bisiestos, excepto aquellos que son múltiplos de 100 y no lo
+son de 400. Es decir, el año 2000 sí es bisiesto, pero no lo son el 1990 ni el 2100.
 */
 
 namespace Ejercicio2
@@ -11,25 +11,22 @@ namespace Ejercicio2
     {
         static void Main()
         {
-            EntradaDatos entradaDatos = new();
-            int anio = entradaDatos.LeerNumero("Introduce el primer número: ");
-
+            int anio = EntradaDatos.LeerNumero("Introduce el año: "); 
 
             if (anio % 4 == 0 && (anio % 100 != 0 || anio % 400 == 0))
             {
-                Console.WriteLine("anio Bisiesto");
+                Console.WriteLine("Año bisiesto");
             }
             else
             {
-                Console.WriteLine("anio no bisiesto");
-
+                Console.WriteLine("Año no bisiesto");
             }
         }
     }
 
     class EntradaDatos
     {
-        public int LeerNumero(string mensaje)
+        public static int LeerNumero(string mensaje)
         {
             while (true)
             {

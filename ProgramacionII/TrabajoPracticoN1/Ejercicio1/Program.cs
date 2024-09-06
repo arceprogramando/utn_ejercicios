@@ -9,10 +9,9 @@ namespace Ejercicio1
     {
         static void Main()
         {
-            EntradaDatos entradaDatos = new EntradaDatos();
-            int num1 = entradaDatos.LeerNumero("Introduce el primer número: ");
-            int num2 = entradaDatos.LeerNumero("Introduce el segundo número: ");
-            int num3 = entradaDatos.LeerNumero("Introduce el tercer número: ");
+            int num1 = EntradaDatos.LeerNumero("Introduce el primer número: ");
+            int num2 = EntradaDatos.LeerNumero("Introduce el segundo número: ");
+            int num3 = EntradaDatos.LeerNumero("Introduce el tercer número: ");
 
             int contadorDiferentes = 0;
             if (num1 != num2 && num1 != num3) contadorDiferentes++;
@@ -37,12 +36,11 @@ namespace Ejercicio1
             Console.WriteLine($"Producto del mayor por el menor: {product}");
             Console.WriteLine($"El número restante ({numeroRestante}) es divisible por 3: {isDivisibleBy3}");
         }
-
     }
 
     class EntradaDatos
     {
-        public int LeerNumero(string mensaje)
+        public static int LeerNumero(string mensaje)
         {
             while (true)
             {
