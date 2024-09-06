@@ -1,43 +1,62 @@
 ﻿/*
 Ejercicio 3
-Escribe un programa que calcule el factorial de n donde n es un número entero mayor o
-igual que cero dado por el usuario.
+Escribe un programa que calcule el factorial de n donde n es un número entero mayor o igual que cero dado por el usuario.
 */
+
+using System;
 using System.Numerics;
-class Program
+
+namespace Ejercicio3
 {
-
-    static void Main()
+    class Program
     {
-        int num = LeeNumero("Ingrese un numero para calcular la factorial:");
-
-        if(num < 0)
+        static void Main()
         {
-            Console.WriteLine("El número debe ser mayor o igual a cero.");
-            return; 
+            int num = LeeNumero("Ingrese un número para calcular el factorial: ");
+
+            BigInteger factorial = Calculos.CalcularFactorial(num);
+
+            Console.WriteLine($"El resultado del factorial de {num} es {factorial}");
         }
 
-    BigInteger tempResult = 1;
-        
-        for (int i = 1; i <= num; i++)
+        static int LeeNumero(string mensaje)
         {
-            tempResult *= i;
+            while (true)
+            {
+                Console.Write(mensaje);
+                string? input = Console.ReadLine();
+
+                if (int.TryParse(input, out int numero))
+                {
+                    if (numero >= 0)
+                    {
+                        return numero;
+                    }
+                    else
+                    {
+                        Console.WriteLine("El número debe ser mayor o igual a 0.");
+                    }
+                }
+                else
+                {
+                    Console.WriteLine("Por favor, introduce un número entero válido.");
+                }
+            }
         }
-
-        Console.WriteLine($"El resultado es {tempResult}");
-
     }
 
-    static int LeeNumero(string mensaje)
+    class Calculos
     {
-        while (true)
+        public static BigInteger CalcularFactorial(int num)
         {
-            Console.Write(mensaje);
-            string? input = Console.ReadLine();
+            BigInteger tempResult = 1;
 
-            if (int.TryParse(input, out int numero)) return numero;
+            for (int i = 1; i <= num; i++)
+            {
+                tempResult *= i;
+            }
 
-            Console.WriteLine("Por favor, introduce un número valido.");
+            return tempResult;
         }
     }
 }
