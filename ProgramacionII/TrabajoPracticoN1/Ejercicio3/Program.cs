@@ -12,39 +12,37 @@ namespace Ejercicio3
     {
         static void Main()
         {
-            int num = LeeNumero("Ingrese un número para calcular el factorial: ");
+            int num = EntradaDatos.Factorizacion();
 
             BigInteger factorial = Calculos.CalcularFactorial(num);
 
             Console.WriteLine($"El resultado del factorial de {num} es {factorial}");
         }
+    }
 
-        static int LeeNumero(string mensaje)
+    class EntradaDatos
+    {
+
+        public static int Factorizacion()
+        {
+            return LeerNumero("Introduce el numero a Factorizar: ");
+        }
+        private static int LeerNumero(string mensaje)
         {
             while (true)
             {
                 Console.Write(mensaje);
                 string? input = Console.ReadLine();
 
-                if (int.TryParse(input, out int numero))
+                if (input != null && int.TryParse(input, out int numero))
                 {
-                    if (numero >= 0)
-                    {
-                        return numero;
-                    }
-                    else
-                    {
-                        Console.WriteLine("El número debe ser mayor o igual a 0.");
-                    }
+                    return numero;
                 }
-                else
-                {
-                    Console.WriteLine("Por favor, introduce un número entero válido.");
-                }
+
+                Console.WriteLine("Por favor, introduce un número entero válido.");
             }
         }
     }
-
     class Calculos
     {
         public static BigInteger CalcularFactorial(int num)

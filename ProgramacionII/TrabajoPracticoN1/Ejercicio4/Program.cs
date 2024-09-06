@@ -1,47 +1,63 @@
 ﻿/*
 Ejercicio 4
-Escribe un programa que escriba todos los divisores de un número n entero positivo
-introducido por el usuario.
+Escribe un programa que escriba todos los divisores de un número n entero positivo introducido por el usuario.
 */
 
-
-class Program
+namespace Ejercicio4
 {
-    static void Main()
+    class Program
     {
-        int num = LeerNumero("Introduce un número: ");
-
-        EscribirDivisores(num);
-
-    }
-
-    static int LeerNumero(string mensaje)
-    {
-        while (true)
+        static void Main()
         {
-            Console.Write(mensaje);
-            string? input = Console.ReadLine();
+            int num = EntradaDatos.Divisores();
 
-            if (int.TryParse(input, out int numero)) return numero;
+            int divisores = Calculos.ObtenerYContarDivisores(num);
 
-            Console.WriteLine("Por favor, introduce un número válido");
+            Console.WriteLine($"La cantidad de divisores de {num} es {divisores}");
         }
+
     }
 
-    static int EscribirDivisores(int numero)
+    class EntradaDatos
     {
-        int contadorDivisores = 0;
 
-        for (int i = 1; i <= numero; i++)
+        public static int Divisores()
         {
-            if (numero % i == 0)
+            return LeerNumero("Introduce el numero para sacar los divisores:");
+        }
+        private static int LeerNumero(string mensaje)
+        {
+            while (true)
             {
-                Console.WriteLine(i);
-                contadorDivisores++;
+                Console.Write(mensaje);
+                string? input = Console.ReadLine();
+
+                if (input != null && int.TryParse(input, out int numero))
+                {
+                    return numero;
+                }
+
+                Console.WriteLine("Por favor, introduce un número entero válido.");
             }
         }
-
-        return contadorDivisores;
     }
 
+    class Calculos
+    {
+        public static int ObtenerYContarDivisores(int numero)
+        {
+            int contadorDivisores = 0;
+
+            for (int i = 1; i <= numero; i++)
+            {
+                if (numero % i == 0)
+                {
+                    Console.WriteLine(i);
+                    contadorDivisores++;
+                }
+            }
+
+            return contadorDivisores;
+        }
+    }
 }
