@@ -31,7 +31,6 @@ project.fragment.lock.json
 
 # Configuración de resharper y análisis de código
 _ReSharper*/
-*.DotSettings.user
 
 # Archivos de resultados de depuración y cobertura
 TestResults/
@@ -76,3 +75,7 @@ publish/
 
 # Archivos de configuración de IDE
 .idea/
+*.sublime-workspace
+*.sublime-project
+*.swp
+*.swo

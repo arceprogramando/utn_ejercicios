@@ -33,7 +33,7 @@ namespace Ejercicio1
 
             Console.WriteLine($"\nNúmeros diferentes: {contadorDiferentes}");
             Console.WriteLine($"Suma: {sum}");
-            Console.WriteLine($"Promedio: {promedio}");
+            Console.WriteLine($"Promedio: {promedio:F2}");
             Console.WriteLine($"Producto del mayor por el menor: {product}");
             Console.WriteLine($"El número restante ({numeroRestante}) es divisible por 3: {isDivisibleBy3}");
         }
