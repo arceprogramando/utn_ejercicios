@@ -11,7 +11,7 @@ namespace Ejercicio2
     {
         static void Main()
         {
-            int anio = EntradaDatos.LeerNumero("Introduce el año: "); 
+            int anio = EntradaDatos.SolicitarAnio(); 
 
             if (anio % 4 == 0 && (anio % 100 != 0 || anio % 400 == 0))
             {
@@ -26,7 +26,12 @@ namespace Ejercicio2
 
     class EntradaDatos
     {
-        public static int LeerNumero(string mensaje)
+
+        public static int SolicitarAnio()
+        {
+            return LeerNumero("Introduce el año: ");
+        }
+        private static int LeerNumero(string mensaje)
         {
             while (true)
             {
